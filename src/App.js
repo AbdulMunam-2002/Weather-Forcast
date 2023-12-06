@@ -8,6 +8,7 @@ import React from 'react';
 import Aboutus from './Components/About';
 import Contact from './Components/ContactUs';
 import Support from './Components/Support';
+import Guide from './Components/Guide';
 
 function App() {
   return (
