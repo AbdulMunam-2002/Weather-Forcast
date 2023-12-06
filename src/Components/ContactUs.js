@@ -12,12 +12,14 @@ const Contact = () => {
     minHeight: '100vh',
     position: 'relative',
   };
-
+  const contactSectionStyle = {
+    paddingTop: '180px',
+  };
   return (
     <>
       <div  style={componentStyle}>
       <Header/>
-        <section id="contact" className="contact">
+        <section id="contact" className="contact" style={contactSectionStyle}>
           <div className="container" data-aos="fade-up">
             <div className="section-title">
               <h2><b>CONTACT</b></h2>
