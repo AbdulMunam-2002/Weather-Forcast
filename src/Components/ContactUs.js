@@ -54,9 +54,8 @@ const Contact = () => {
               <h2><b>Contact</b></h2>
             </div>
           </div>
-<br>
-</br>
-<br></br>          <div className="container d-flex justify-content-center" data-aos="fade-up">
+          <br></br>
+          <div className="container d-flex justify-content-center" data-aos="fade-up">
             <div className="col-lg-8 mt-5 mt-lg-0">
               <form
                 action="forms/contact.php"
