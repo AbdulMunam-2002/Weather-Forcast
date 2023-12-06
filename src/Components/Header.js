@@ -27,7 +27,8 @@ export default function Header() {
                   <NavDropdown.Item href="#action/3.2">Help</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action/3.4">Social Media Profiles</NavDropdown.Item>
-                </NavDropdown>            </Nav>
+                </NavDropdown>            
+                </Nav>
             <Nav className="me-3">
               <Button variant="success">Contact us</Button>
             </Nav>

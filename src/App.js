@@ -12,7 +12,7 @@ import Support from './Components/Support';
 function App() {
   return (
     <div className="App">
-     <Support/>
+     <Home/>
      </div>
   );
 }
