@@ -3,7 +3,7 @@ import { Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
 import additionalImage from '../Assets/Images/Header1.png';
 import Image2 from '../Assets/Img 1.png';
 
-export default function Footer()
+export default function Header()
 {
     const headerStyle = {
         backgroundImage: `url(${additionalImage})`,
@@ -38,7 +38,7 @@ export default function Footer()
             </Navbar.Collapse>
           </Container>
         </Navbar>
-
+        <br></br><br></br>
         </>
     )
 }

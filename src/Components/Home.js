@@ -1,8 +1,13 @@
+import Header from './Header';
+import Footer from './Footer';
+
 export default function Home()
 {
     return(
         <>
-            <h1>Hero section</h1>
+            <Header/>
+            <h1>Welcome to SkySync</h1>
+            <Footer/>
         </>
     )
 }

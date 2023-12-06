@@ -1,5 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
+import Header from './Header';
+import Footer from './Footer';
 import Image2 from '../Assets/Img 1.png';
 
 const Contact = () => {
@@ -14,8 +16,7 @@ const Contact = () => {
   return (
     <>
       <div  style={componentStyle}>
-        <br />
-        <br />
+      <Header/>
         <section id="contact" className="contact">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
@@ -80,6 +81,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
+        <Footer/>
       </div>
     </>
   );

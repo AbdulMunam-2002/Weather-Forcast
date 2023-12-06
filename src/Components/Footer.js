@@ -12,7 +12,9 @@ export default function Footer()
         minHeight: '75px',
       };
     return(
-        <>      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" style={headerStyle}>
+        <>
+        <br></br><br></br>
+        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" style={headerStyle}>
         <Container>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">

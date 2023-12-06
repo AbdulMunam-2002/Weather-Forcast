@@ -8,6 +8,8 @@ import image from '../Assets/Images/Rectangle 95.png';
 import image3 from '../Assets/Ellipse 1.png';
 import additionalImage from '../Assets/Images/Header1.png'; // Replace with the actual path to your image
 import bgimage from '../Assets/Img 1.png'; // Add the path to your Image1
+import Header from './Header';
+import Footer from './Footer';
 
 const imageUrl = '../Assets/Img 1.png';
 
@@ -58,39 +60,9 @@ function Aboutus() {
     marginTop: '20px',
   };
 
-  const headerStyle = {
-    backgroundImage: `url(${additionalImage})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-    minHeight: '75px', // Set the height as needed
-  };
   return (
     <div style={componentStyle}>
-           <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" style={headerStyle}>
-        <Container>
-          <Navbar.Brand href="#home">SKYSYNC</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mx-auto">
-              <Nav.Link href="#features">Home</Nav.Link>
-              <Nav.Link href="#pricing">About</Nav.Link>
-              <Nav.Link href="#pricing">Map</Nav.Link>
-              <Nav.Link href="#pricing">Guide</Nav.Link>
-              <Nav.Link href="#pricing">News & Blogs</Nav.Link>
-
-              <NavDropdown title="Support" id="collapsible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.2">Help</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Social Media Profiles</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-            <Nav className="me-3">
-              <Button variant="success">Contact us</Button>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
+      <Header/>
       <Container className="my-4 text-center" style={{ position: 'relative' }}>
         <img src={image} alt="SKYSYNC" style={imageStyle} />
         <div style={overlayTextStyle}>About SkySync</div>
@@ -154,16 +126,7 @@ function Aboutus() {
           </div>
         </div>
       </Container>
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" style={headerStyle}>
-        <Container>
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mx-auto">
-              <Nav.Link href="#features">© 2022 — 2023 SKYSYNC ® All rights reserved</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
+      <Footer/>
 
     </div>
   );
