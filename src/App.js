@@ -6,11 +6,12 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Aboutus from './Components/About';
+import Contact from './Components/ContactUs';
 
 function App() {
   return (
     <div className="App">
-     <Aboutus/>
+     <Contact/>
      </div>
   );
 }
