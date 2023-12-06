@@ -51,7 +51,7 @@ const Contact = () => {
         <section id="contact" className="contact">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
-              <h2><b>Contact</b></h2>
+              <h2><b>CONTACT</b></h2>
             </div>
           </div>
 <br>
