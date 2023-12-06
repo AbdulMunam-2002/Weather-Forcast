@@ -62,3 +62,22 @@
   background: rgba(0, 0, 0, 0.85);
   border-bottom: 1px solid #37332a;
 }
+#footerStyle {
+  textAlign: 'center';
+  paddingTop: '20px';
+  text-decoration-color: 'white';
+  background: rgba(12, 11, 9, 0.6);
+  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+  transition: 'all 0.5s';
+  zIndex: '997';
+ 
+};
+
+scrolledFooterStyle {
+  background: rgba(0, 0, 0, 0.85);
+  border-bottom: 1px solid #37332a;
+   top: '0';
+   color: 'white';
+
+};
+

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Navbar, Container, Nav, Button, NavDropdown } from 'react-bootstrap';
-import backgroundImage from '../Assets/Images/Header1.png';
-
 export default function Header() {
 
   const brandStyle = {
