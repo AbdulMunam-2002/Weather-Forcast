@@ -7,8 +7,13 @@ export default function Support() {
   return (
     <div className='bg'>
       <Header />
-
-      <div style={{ margin: '50px auto', textAlign: 'center', color: 'white' }}>
+<br></br>
+<br></br>
+<br></br>
+<br>
+</br>
+<br></br>
+      <div style={{ margin: '20px auto', textAlign: 'center', color: 'white' }}>
         <h4>HOW CAN WE HELP YOU ?</h4>
       </div>
     
