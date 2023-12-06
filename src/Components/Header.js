@@ -10,6 +10,11 @@ export default function Header() {
   const dropdownStyle = {
     color: 'white', // Set the text color to black or another color of your choice
   };
+  const buttonStyle = {
+    borderColor: '#CDA45E',
+    color: '#CDA45E',
+    borderRadius: '50px',
+  };
   return (
     <header id="header" className="fixed-top">
       <Navbar collapseOnSelect expand="lg">
@@ -24,13 +29,13 @@ export default function Header() {
               <Nav.Link href="#Guide" style={{ color: 'white' }}>Guide</Nav.Link>
               <Nav.Link href="#News & Blogs"style={{ color: 'white' }}>News & Blogs</Nav.Link>
               <NavDropdown title="Support" id="collapsible-nav-dropdown" style={{ color: 'white' }}>
-                  <NavDropdown.Item href="#action/3.2">Help</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">Social Media Profiles</NavDropdown.Item>
-                </NavDropdown>            
-                </Nav>
+                <NavDropdown.Item href="#action/3.2">Help</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">Social Media Profiles</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
             <Nav className="me-3">
-              <Button variant="success">Contact us</Button>
+              <Button variant="outline-warning" style={buttonStyle}>Contact us</Button>
             </Nav>
           </Navbar.Collapse>
         </Container>
