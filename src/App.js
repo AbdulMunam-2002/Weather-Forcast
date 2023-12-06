@@ -11,7 +11,9 @@ import Contact from './Components/ContactUs';
 function App() {
   return (
     <div className="App">
+     <Header/>
      <Contact/>
+     <Footer/>
      </div>
   );
 }
