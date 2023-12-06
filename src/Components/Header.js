@@ -1,44 +1,41 @@
 import React from 'react';
-import { Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
-import additionalImage from '../Assets/Images/Header1.png';
-import Image2 from '../Assets/Img 1.png';
+import { Navbar, Container, Nav, Button, NavDropdown } from 'react-bootstrap';
+import backgroundImage from '../Assets/Images/Header1.png';
 
-export default function Header()
-{
-    const headerStyle = {
-        backgroundImage: `url(${additionalImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        minHeight: '75px',
-      };
-    return(
-        <>      
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" style={headerStyle}>
-          <Container>
-            
-          <Navbar.Brand href="#home">SKYSYNC</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="mx-auto">
-                <Nav.Link href="#features">Home</Nav.Link>
-                <Nav.Link href="#pricing">About</Nav.Link>
-                <Nav.Link href="#pricing">Map</Nav.Link>
-                <Nav.Link href="#pricing">Guide</Nav.Link>
-                <Nav.Link href="#pricing">News & Blogs</Nav.Link>
+export default function Header() {
 
-                <NavDropdown title="Support" id="collapsible-nav-dropdown">
+  const brandStyle = {
+    fontSize: '24px', // Adjust the font size of SKYSYNC
+    color: 'white', // Set the color to white
+    fontWeight: 'bold', // Add bold font weight
+  };
+  const dropdownStyle = {
+    color: 'white', // Set the text color to black or another color of your choice
+  };
+  return (
+    <header id="header" className="fixed-top">
+      <Navbar collapseOnSelect expand="lg">
+        <Container>
+          <Navbar.Brand href="#home" style={brandStyle}>SKYSYNC</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mx-auto">
+              <Nav.Link href="#Home" style={{ color: 'white' }}>Home</Nav.Link>
+              <Nav.Link href="#About" style={{ color: 'white' }}>About</Nav.Link>
+              <Nav.Link href="#Map" style={{ color: 'white' }}>Map</Nav.Link>
+              <Nav.Link href="#Guide" style={{ color: 'white' }}>Guide</Nav.Link>
+              <Nav.Link href="#News & Blogs"style={{ color: 'white' }}>News & Blogs</Nav.Link>
+              <NavDropdown title="Support" id="collapsible-nav-dropdown" style={{ color: 'white' }}>
                   <NavDropdown.Item href="#action/3.2">Help</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action/3.4">Social Media Profiles</NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-              <Nav className="me-3">
-                <Button variant="success">Contact us</Button>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-        <br></br><br></br>
-        </>
-    )
+                </NavDropdown>            </Nav>
+            <Nav className="me-3">
+              <Button variant="success">Contact us</Button>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
+  );
 }

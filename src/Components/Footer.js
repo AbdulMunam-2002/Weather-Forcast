@@ -5,16 +5,11 @@ import Image2 from '../Assets/Img 1.png';
 
 export default function Footer()
 {
-    const headerStyle = {
-        backgroundImage: `url(${additionalImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        minHeight: '75px',
-      };
     return(
         <>
         <br></br><br></br>
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" style={headerStyle}>
+        <Footer id="header" className="fixed-top">
+        <Navbar collapseOnSelect expand="lg">
         <Container>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
@@ -23,7 +18,7 @@ export default function Footer()
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
+      </Footer>
         </>
     )
 }
