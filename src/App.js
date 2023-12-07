@@ -9,13 +9,13 @@ import Aboutus from './Components/About';
 import Contact from './Components/ContactUs';
 import Support from './Components/Support';
 import Guide from './Components/Guide';
-import Search from './Components/SearchWeather';
+import Search from './Components/Search';
 import NewsandBlogs from './Components/NewAndBlogs';
 
 function App() {
   return (
     <div className="App">
-     <Guide/>
+     <Search/>
      </div>
   );
 }
