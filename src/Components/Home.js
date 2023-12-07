@@ -14,8 +14,7 @@ export default function Home() {
     <>
     <div className='bg'>
       <Header />
-      <br></br><br></br>
-      <div style={{ color: 'white' }}>
+      <div className="mt-3" style={{ color: 'white' }}>
       <h1>Welcome to <span style={{ color: '#F8DC7B' }}>SkySync</span></h1>
       <h6>Sun or Storm, Stay informed and in control!</h6>
       <br></br>

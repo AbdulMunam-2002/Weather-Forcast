@@ -34,7 +34,7 @@ export default function Header() {
                 <NavDropdown.Item href="#action/3.4">Social Media Profiles</NavDropdown.Item>
               </NavDropdown>
             </Nav>
-            <Nav className="me-3">
+            <Nav>
               <Button variant="outline-warning" style={buttonStyle}>Contact us</Button>
             </Nav>
           </Navbar.Collapse>
