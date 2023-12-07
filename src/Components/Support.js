@@ -5,24 +5,18 @@ import Image2 from '../Assets/Img 1.png';
 
 export default function Support() {
   return (
-    <div className='bg'>
+    <div className='bg4'>
       <Header />
-<br></br>
-<br></br>
-<br></br>
-<br>
-</br>
-<br></br>
-      <div style={{ margin: '20px auto', textAlign: 'center', color: 'white' }}>
+      <div style={{ margin: '5px auto', textAlign: 'center', color: 'white', marginTop: '190px' }}>
         <h4>HOW CAN WE HELP YOU ?</h4>
       </div>
-    
-      <div style={{ marginTop: '30px', marginBottom: '50px', textAlign: 'center' }}>
+
+      <div style={{ marginTop: '30px', marginBottom: '50px', textAlign: 'center', minHeight: '100vh' }}>
         {/* Add a text area here with border radius */}
         <textarea
           placeholder="Type your detailed message here"
           style={{
-            width: '700px',
+            width: '70%', // Adjusted width to be responsive
             height: '300px',
             fontSize: '24px',
             borderRadius: '10px', // Set border radius

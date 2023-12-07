@@ -18,7 +18,7 @@ export default function Home() {
       <h1>Welcome to <span style={{ color: '#F8DC7B' }}>SkySync</span></h1>
       <h6>Sun or Storm, Stay informed and in control!</h6>
       <br></br>
-      <Button type="submit" style={buttonStyle}><h1>Try Dashboard</h1></Button>
+      <Button type="submit" style={buttonStyle}><h3>Try Dashboard</h3></Button>
       <br></br><br></br>
       </div>
       <Footer />

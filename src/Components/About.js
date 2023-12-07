@@ -61,8 +61,16 @@ function Aboutus() {
   };
 
   return (
-    <div style={componentStyle}>
+    <div className='bg2'>
       <Header/>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      
       <Container className="my-4 text-center" style={{ position: 'relative' }}>
         <img src={image} alt="SKYSYNC" style={imageStyle} />
         <div style={overlayTextStyle}>About SkySync</div>
@@ -77,9 +85,9 @@ function Aboutus() {
         </h2>
 
         <div>
-        <div className="row" style={{ backgroundImage: `url(${additionalImage})`, backgroundSize: 'cover', backgroundPosition: 'center center', minHeight: '300px' }}>
-  <div className="col-lg-6 col-sm-12 col-md-6 mt-5">
-    <p>
+        <div className="row" >
+         <div className="col-lg-6 col-sm-12 col-md-6 mt-5">
+    <p style={{color:'white'}}>
       Dive into a world of weather insights with our News and Blogs section at SKYSYNC. Stay ahead of the forecast with breaking news, expert analysis, and captivating articles. Whether you're a weather enthusiast or just looking to stay informed, explore our curated content for a deeper understanding of meteorological phenomena and stay connected with the latest developments in the atmospheric world.
     </p>
   </div>
@@ -90,14 +98,24 @@ function Aboutus() {
 
           </div>
       </Container>
-
+      <Container>
+        <br></br>
+        <h2 style={{ color: '#E2E3A1' }}>
+          <b>Mission</b>
+        </h2>
+        <div className="row" id='footerStyle'>
+          <div className="col-lg-6 col-md-6 col-sm-12 text-align-center jutify-content-center">
+<p style={{ color: 'white', textAlign:'center'}}>Our mission is to help companies to face the future trends and challenges with confidence, using OpenWeather accurate and precise weather data.</p>
+          </div>
+        </div>
+      </Container>
       <Container>
         <br></br>
         <h2 style={{ color: '#E2E3A1' }}>
           <b>Core Values</b>
         </h2>
         <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12">
+          <div className="col-lg-6 col-md-6 col-sm-12" style={{color:'white'}}>
             <ul>
               <li>
                 <h4>Accuracy:</h4> We are dedicated to providing precise and up-to-date weather information to our
@@ -115,17 +133,7 @@ function Aboutus() {
           </div>
         </div>
       </Container>
-      <Container>
-        <br></br>
-        <h2 style={{ color: '#E2E3A1' }}>
-          <b>Mission</b>
-        </h2>
-        <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12 text-align-center jutify-content-center">
-<p>Our mission is to help companies to face the future trends and challenges with confidence, using OpenWeather accurate and precise weather data.</p>
-          </div>
-        </div>
-      </Container>
+      
       <Footer/>
 
     </div>
