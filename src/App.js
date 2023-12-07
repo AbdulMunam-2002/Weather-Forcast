@@ -15,7 +15,7 @@ import NewsandBlogs from './Components/NewAndBlogs';
 function App() {
   return (
     <div className="App">
-     <Support/>
+     <Guide/>
      </div>
   );
 }
