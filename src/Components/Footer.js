@@ -11,7 +11,6 @@ export default function Footer() {
         <br></br>
         <p style={{color:'white'}}>&copy;2022 — 2023 SKYSYNC ® All rights reserved</p>
       </div>
-      {/* Add the following style when the footer is scrolled */}
       <div id="scrolledFooterStyle"></div>
     </footer>
   );
