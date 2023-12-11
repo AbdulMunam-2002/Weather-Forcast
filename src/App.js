@@ -11,13 +11,22 @@ import Support from './Components/Support';
 import Guide from './Components/Guide';
 import Search from './Components/Search';
 import NewsandBlogs from './Components/NewAndBlogs';
+import { Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (
     <div className="App">
-     <Search/>
+      <Routes>
+      <Route path={'/'} element={<Home/>}/>
+<Route path={'/Newsandblog'} element={<NewsandBlogs/>}/>
+<Route path={'/support'} element={<Support/>}/>
+<Route path={'/Guide'} element={<Guide/>}/>
+<Route path={'/Aboutus'} element={<Aboutus/>}/>
+<Route path={'/Contactus'} element={<Contact/>}/>
+<Route path={'/search'} element={<Search/>}/>
+      </Routes>
      </div>
   );
 }
-
 export default App;

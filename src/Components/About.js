@@ -1,33 +1,19 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 import image from '../Assets/Images/Rectangle 95.png';
 import image3 from '../Assets/Ellipse 1.png';
-import additionalImage from '../Assets/Images/Header1.png'; // Replace with the actual path to your image
-import bgimage from '../Assets/Img 1.png'; // Add the path to your Image1
 import Header from './Header';
 import Footer from './Footer';
 
 const imageUrl = '../Assets/Img 1.png';
 
 function Aboutus() {
-  const componentStyle = {
-    backgroundImage: `url(${bgimage})`, // Updated with Image1
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-    minHeight: '100vh',
-    height: '100vh',
-    position: 'relative',
-  };
-
-
   const imageStyle = {
     width: '100%',
     height: 'auto',
     objectFit: 'cover',
+    marginTop: '150px'
   };
 
   const image3Style = {
@@ -38,7 +24,7 @@ function Aboutus() {
 
   const overlayTextStyle = {
     position: 'absolute',
-    top: '50%',
+    top: '60%',
     left: '25%',
     transform: 'translate(-70%, -70%)',
     color: '#fff',
@@ -48,7 +34,7 @@ function Aboutus() {
 
   const buttonStyle = {
     position: 'absolute',
-    top: '55%',
+    top: '65%',
     left: '17%',
   };
 
@@ -58,19 +44,12 @@ function Aboutus() {
     padding: '20px',
     borderRadius: '10px',
     marginTop: '20px',
+    textAlign: 'left',
   };
 
   return (
     <div className='bg2'>
-      <Header/>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-
-      
+      <Header />
       <Container className="my-4 text-center" style={{ position: 'relative' }}>
         <img src={image} alt="SKYSYNC" style={imageStyle} />
         <div style={overlayTextStyle}>About SkySync</div>
@@ -80,42 +59,48 @@ function Aboutus() {
       </Container>
 
       <Container>
-        <h2 style={{ color: '#E2E3A1' }}>
+        <h2 style={{ color: '#E2E3A1', textAlign: 'left', marginTop: '20px' }}>
           <b>About us</b>
         </h2>
 
-        <div>
-        <div className="row" >
-         <div className="col-lg-6 col-sm-12 col-md-6 mt-5">
-    <p style={{color:'white'}}>
-      Dive into a world of weather insights with our News and Blogs section at SKYSYNC. Stay ahead of the forecast with breaking news, expert analysis, and captivating articles. Whether you're a weather enthusiast or just looking to stay informed, explore our curated content for a deeper understanding of meteorological phenomena and stay connected with the latest developments in the atmospheric world.
-    </p>
-  </div>
-  <div className="col-lg-6 col-sm-12 col-md-6">
-    <img src={image3} alt="SKYSYNC" style={image3Style} />
-  </div>
-</div>
-
+        <div className="row">
+          <div className="col-lg-6 col-sm-12 col-md-6 mt-5">
+            <p style={{ color: 'white', textAlign: 'left' }}>
+              Dive into a world of weather insights with our News and Blogs section at SKYSYNC. Stay ahead of the forecast
+              with breaking news, expert analysis, and captivating articles. Whether you're a weather enthusiast or just
+              looking to stay informed, explore our curated content for a deeper understanding of meteorological
+              phenomena and stay connected with the latest developments in the atmospheric world.
+            </p>
           </div>
-      </Container>
-      <Container>
-        <br></br>
-        <h2 style={{ color: '#E2E3A1' }}>
-          <b>Mission</b>
-        </h2>
-        <div className="row" id='footerStyle'>
-          <div className="col-lg-6 col-md-6 col-sm-12 text-align-center jutify-content-center">
-<p style={{ color: 'white', textAlign:'center'}}>Our mission is to help companies to face the future trends and challenges with confidence, using OpenWeather accurate and precise weather data.</p>
+          <div className="col-lg-6 col-sm-12 col-md-6">
+            <img src={image3} alt="SKYSYNC" style={image3Style} />
           </div>
         </div>
       </Container>
+
       <Container>
+        <br />
+        <h2 style={{ color: '#E2E3A1', textAlign: 'left' }}>
+          <b>Mission</b>
+        </h2>
         <br></br>
-        <h2 style={{ color: '#E2E3A1' }}>
+        <div className="row">
+          <div className="col-lg-6 col-md-6 col-sm-12 text-align-center justify-content-center">
+            <p style={{ color: 'white', textAlign: 'center' }}>
+              Our mission is to help companies to face the future trends and challenges with confidence, using
+              OpenWeather accurate and precise weather data.
+            </p>
+          </div>
+        </div>
+      </Container>
+
+      <Container>
+        <br />
+        <h2 style={{ color: '#E2E3A1', textAlign: 'left' }}>
           <b>Core Values</b>
         </h2>
         <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12" style={{color:'white'}}>
+          <div className="col-lg-6 col-md-6 col-sm-12" style={{ color: 'white', textAlign: 'left' }}>
             <ul>
               <li>
                 <h4>Accuracy:</h4> We are dedicated to providing precise and up-to-date weather information to our
@@ -133,9 +118,8 @@ function Aboutus() {
           </div>
         </div>
       </Container>
-      
-      <Footer/>
 
+      <Footer />
     </div>
   );
 }

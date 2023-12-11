@@ -17,12 +17,12 @@ const Contact = () => {
   };
   return (
     <>
-      <div  style={componentStyle}>
+      <div  className='bg5'style={componentStyle}>
       <Header/>
         <section id="contact" className="contact" style={contactSectionStyle}>
           <div className="container" data-aos="fade-up">
             <div className="section-title">
-              <h2><b>CONTACT</b></h2>
+              <h2 style={{color:'white', textDecoration:'underline'}}><b>CONTACT</b></h2>
             </div>
           </div>
           <br></br>
@@ -77,7 +77,8 @@ const Contact = () => {
                 </div>
                 <div className="text-center">
                   <br />
-                  <button type="submit">Send Message</button>
+                  <Button variant="light">Send Message</Button>{' '}
+                 
                 </div>
               </form>
             </div>
