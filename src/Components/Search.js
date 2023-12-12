@@ -40,7 +40,6 @@ export default function Search() {
 
   return (
     <>
-
       <div className='bg'>
         <Header />
         <div className='container'>
