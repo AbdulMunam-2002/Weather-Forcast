@@ -12,19 +12,21 @@ import Guide from './Components/Guide';
 import Search from './Components/Search';
 import NewsandBlogs from './Components/NewAndBlogs';
 import { Route, Routes } from 'react-router-dom';
+import Weather from './Components/Weather';
 
 
 function App() {
   return (
     <div className="App">
       <Routes>
-      <Route path={'/'} element={<Home/>}/>
-<Route path={'/Newsandblog'} element={<NewsandBlogs/>}/>
-<Route path={'/support'} element={<Support/>}/>
-<Route path={'/Guide'} element={<Guide/>}/>
-<Route path={'/Aboutus'} element={<Aboutus/>}/>
-<Route path={'/Contactus'} element={<Contact/>}/>
-<Route path={'/search'} element={<Search/>}/>
+        <Route path={'/'} element={<Home/>}/>
+        <Route path={'/Newsandblog'} element={<NewsandBlogs/>}/>
+        <Route path={'/support'} element={<Support/>}/>
+        <Route path={'/Guide'} element={<Guide/>}/>
+        <Route path={'/Aboutus'} element={<Aboutus/>}/>
+        <Route path={'/Contactus'} element={<Contact/>}/>
+        <Route path={'/Weather'} element={<Weather/>}/>
+        <Route path={'/search'} element={<Search/>}/>
       </Routes>
      </div>
   );

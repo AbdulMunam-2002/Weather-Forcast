@@ -29,11 +29,14 @@ export default function Header() {
               <Nav.Link as={Link} to="/Map" style={{ color: 'white' }}>Map</Nav.Link>
               <Nav.Link as={Link} to="/Guide" style={{ color: 'white' }}>Guide</Nav.Link>
               <Nav.Link as={Link} to="/Newsandblog" style={{ color: 'white' }}> News & Blogs</Nav.Link>
+              <Nav.Link as={Link} to="/Weather" style={{ color: 'white' }}> Weather</Nav.Link>
               <NavDropdown title="Support" id="collapsible-nav-dropdown" style={{ color: 'white' }}>
                 <NavDropdown.Item href="#action/3.2"><Nav.Link as={Link} to="/Support" style={{ color: 'black' }}>Help</Nav.Link></NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">Social Media Profiles</NavDropdown.Item>
               </NavDropdown>
+              
+              
             </Nav>
             <Nav.Link >
   <Button variant="outline-warning" style={buttonStyle}>
