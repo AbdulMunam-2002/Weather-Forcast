@@ -19,7 +19,8 @@ export default function Weather() {
         .then((res) => res.json())
         .then((result) =>
             {
-                setWeather(result)
+                console.log(result);
+                setWeather(result);
             }
         )
     }
@@ -37,7 +38,9 @@ export default function Weather() {
             />
             <button onClick={searchPressed}>Get Weather</button>
         </div>
-        
+        <h4 style={{ color: 'white', marginTop: '30px' }}>{weather.name}</h4>
+        <p style={{ color: 'white' }}>{weather.main.temp} C</p>
+        <p style={{ color: 'white' }}>{weather.main.humidity} humidity</p>
         <Footer />
         </div>
     </>
