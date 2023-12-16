@@ -82,21 +82,31 @@ export default function Weather() {
           {weather.main && (
             <div className="temperature-info">
               <p style={{ color: "white", fontSize: "50px" }}>{weather.main.temp}&deg; C</p>
-              <p style={{ color: "white" }}>feels_like: {weather.main.feels_like} </p>
-
-              {weather.main.humidity !== undefined && (
-                <p style={{ color: "white" }}>
-                  Humidity: <WiHumidity /> {weather.main.humidity}%
-                </p>
-              )}
-              <p style={{ color: "white" }}>Description: {weather.weather[0].description} </p>
-
-              {weather.wind && weather.wind.speed !== undefined && (
-                <p style={{ color: "white" }}>
-                  Wind: <WiStrongWind /> {weather.wind.speed} m/s
-                </p>
-              )}
               {localTime && <p style={{ color: "white" }}>Local Time: {localTime}</p>}
+              <div className="container mt-4">
+                <div className="row">
+                    <div className="col-lg-3 col-md-6 col-sm-12">
+                    </div>
+                    <div className="col-lg-3 col-md-6 col-sm-12">
+                        <p style={{ color: "white" }}>feels_like: {weather.main.feels_like} </p>
+
+                        {weather.main.humidity !== undefined && (
+                            <p style={{ color: "white" }}>
+                            Humidity: <WiHumidity /> {weather.main.humidity}%
+                            </p>
+                        )}
+                    </div>
+                    <div className="col-lg-3 col-md-6 col-sm-12">
+                        <p style={{ color: "white" }}>Description: {weather.weather[0].description} </p>
+
+                        {weather.wind && weather.wind.speed !== undefined && (
+                            <p style={{ color: "white" }}>
+                            Wind: <WiStrongWind /> {weather.wind.speed} m/s
+                            </p>
+                        )}
+                    </div>    
+                </div>
+              </div>
             </div>
           )}
         </div>
