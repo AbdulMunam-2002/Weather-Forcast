@@ -68,12 +68,14 @@
 
 @media (min-width: 768px) {
   .bg3 {
+    position: relative;
     height: 300vh; /* Set the height for larger screens, e.g., tablets and above */
   }
 }
 
 @media (max-width: 767px) {
   .bg3 {
+position: relative;
     height: 410vh; /* Set the height for smaller screens, e.g., mobile devices */
   }
 }
@@ -87,13 +89,17 @@
 
 @media (min-width: 768px) {
   .bg4 {
-    height: 100vh; /* Adjusted height for larger screens */
+    position: relative; /* Ensure relative positioning */
+    height: 100vh; 
+    /* Adjusted height for larger screens */
   }
 }
 
 @media (max-width: 7680px) {
   .bg4 {
-    height: 140vh; /* Set the height for smaller screens, e.g., mobile devices */
+
+      position: relative; /* Ensure relative positioning */
+     height: 140vh; /* Set the height for smaller screens, e.g., mobile devices */
   }
 }
 
@@ -121,18 +127,27 @@
   background: rgba(0, 0, 0, 0.85);
   border-bottom: 1px solid #37332a;
 }
-#footerStyle {
-  textAlign: 'center';
-  paddingTop: '20px';
-  text-decoration-color: 'white';
+/* App.css */
+/* App.css */
+.footer {
+  text-align: center;
+  padding-top: 20px;
+  text-decoration-color: white;
   background: rgba(12, 11, 9, 0.6);
-  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
-  transition: 'all 0.5s';
-  zIndex: '997';
- 
-};
+  border-top: 1px solid rgba(12, 11, 9, 0.6);
+  transition: opacity 0.5s, transform 0.5s;
+  z-index: 997;
+  position: fixed; /* Change to fixed */
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(100%);
+}
 
-/* Weather.css */
+.footer.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Weather.css */
 /* Weather.css */
@@ -150,8 +165,10 @@
 .search-input {
   padding: 10px;
   font-size: 1em;
+  width: 300px; /* Adjust the width as needed */
   border: 2px solid #3498db;
-  border-radius: 5px 0 0 5px;
+  border-radius: 9px 9px 9px 9px;
+  margin-right: 15px; 
 }
 
 .search-button {
@@ -161,7 +178,7 @@
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .weather-details {

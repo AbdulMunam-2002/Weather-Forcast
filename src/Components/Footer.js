@@ -1,17 +1,31 @@
-import React from 'react';
-import { Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
-import additionalImage from '../Assets/Images/Header1.png';
-import Image2 from '../Assets/Img 1.png';
+// Footer.js
+
+import React, { useEffect, useState } from 'react';
 import '../App.css'; // Import the CSS file
 
 export default function Footer() {
+  const [showFooter, setShowFooter] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolledToBottom =
+        window.scrollY + window.innerHeight >= document.body.scrollHeight - 50; // Adjusted threshold
+      setShowFooter(scrolledToBottom);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <footer className="fixed-bottom" id="footerStyle">
+    <footer className={`footer ${showFooter ? 'show' : ''}`}>
       <div>
-        <br></br>
-        <p style={{color:'white'}}>&copy;2022 — 2023 SKYSYNC ® All rights reserved</p>
+        <br />
+        <p style={{ color: 'white' }}>&copy;2022 — 2023 SKYSYNC ® All rights reserved</p>
       </div>
-      <div id="scrolledFooterStyle"></div>
     </footer>
   );
 }

@@ -4,7 +4,7 @@ import Footer from './Footer';
 import header from '../Assets/Images/Header1.png';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-
+import App from '../App';
 export default function Home() {
   const buttonStyle = {
     backgroundColor: '#D9D9D9',
