@@ -5,7 +5,6 @@ import { WiHumidity, WiStrongWind } from "react-icons/wi";
 import Header from "./Header";
 import Footer from "./Footer";
 import App from "../App.css"; // Import the CSS file
-
 const api = {
   key: "c70b7c89e5e525983b5acd571c707a37",
   base: "https://api.openweathermap.org/data/2.5/",
@@ -58,8 +57,7 @@ export default function Weather() {
   return (
     <>
       <div className="bg4">
-        <Header />
-        <div className="search-container">
+        <Header />  <div className="search-container">
           <input
             type="text"
             placeholder="Search any place"

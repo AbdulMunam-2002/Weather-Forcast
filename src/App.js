@@ -25,9 +25,8 @@ function App() {
         <Route path={'/Guide'} element={<Guide/>}/>
         <Route path={'/Aboutus'} element={<Aboutus/>}/>
         <Route path={'/Contactus'} element={<Contact/>}/>
-
         <Route path={'/search'} element={<Search/>}/>
-        <Route path={'/weather'} component={<Weather/>} />
+        <Route path={'/Weather'} element={<Weather/>} />
       </Routes>
      </div>
   );
