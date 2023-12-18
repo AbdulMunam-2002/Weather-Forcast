@@ -26,7 +26,7 @@ export default function Header() {
             <Nav className="mx-auto">
               <Nav.Link as={Link} to="/" style={{ color: 'white' }}>Home</Nav.Link>
               <Nav.Link as={Link} to="/aboutus" style={{ color: 'white' }}>About</Nav.Link>
-              <Nav.Link as={Link} to="/Map" style={{ color: 'white' }}>Map</Nav.Link>
+              <Nav.Link as={Link} to="/Search" style={{ color: 'white' }}>Map</Nav.Link>
               <Nav.Link as={Link} to="/Guide" style={{ color: 'white' }}>Guide</Nav.Link>
               <Nav.Link as={Link} to="/Newsandblog" style={{ color: 'white' }}> News & Blogs</Nav.Link>
               <Nav.Link as={Link} to="/Weather" style={{ color: 'white' }}> Weather</Nav.Link>

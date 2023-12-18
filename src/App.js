@@ -26,7 +26,8 @@ function App() {
         <Route path={'/Aboutus'} element={<Aboutus/>}/>
         <Route path={'/Contactus'} element={<Contact/>}/>
         <Route path={'/search'} element={<Search/>}/>
-        <Route path={'/Weather'} element={<Weather/>} />
+        <Route path={'/Weather'} element={<Weather/>}/>
+        
       </Routes>
      </div>
   );
