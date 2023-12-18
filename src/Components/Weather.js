@@ -76,35 +76,53 @@ export default function Weather() {
           </button>
         </div>
         <div className="weather-info">
-          <h4 style={{ color: "white", marginTop: "20px" }}>{weather.name}</h4>
-          <div className="weather-icon">
-            {weatherIcon && (
-              <img
-                src={`http://openweathermap.org/img/wn/${weatherIcon}.png`}
-                alt="Weather Icon"
-                style={{ width: "60px", height: "60px" }}
-              />
-            )}
-          </div>
-          {weather.main && (
-            <div className="temperature-info">
-              <p style={{ color: "white", fontSize: "50px" }}>{weather.main.temp}&deg; C</p>
-              <p style={{ color: "white" }}>feels_like: {weather.main.feels_like} </p>
-
-              {weather.main.humidity !== undefined && (
-                <p style={{ color: "white" }}>
-                  Humidity: <WiHumidity /> {weather.main.humidity}%
-                </p>
-              )}
-              <p style={{ color: "white" }}>Description: {weather.weather[0].description} </p>
-
-              {weather.wind && weather.wind.speed !== undefined && (
-                <p style={{ color: "white" }}>
-                  Wind: <WiStrongWind /> {weather.wind.speed} m/s
-                </p>
-              )}
-              {localTime && <p style={{ color: "white" }}>Local Time: {localTime}</p>}
-            </div>
+          {(weather && weather.name) ? (
+            <>
+              <h4 style={{ color: "white", marginTop: "20px" }}>{weather.name}</h4>
+              <div className="weather-icon">
+                {weatherIcon && (
+                  <img
+                    src={`http://openweathermap.org/img/wn/${weatherIcon}.png`}
+                    alt="Weather Icon"
+                    style={{ width: "60px", height: "60px" }}
+                  />
+                )}
+              </div>
+              {weather.main && (
+                <div className="temperature-info">
+                  <p style={{ color: "white", fontSize: "50px",color:'#F8DC7B' }}>{weather.main.temp}&deg; C</p>
+                  <p style={{ color: "white" }}>feels_like: {weather.main.feels_like} </p>
+                  <br></br>
+                  <div className="container">
+                  <div className="row">
+                    <div className="col-lg-6 col-sm-6">
+                      {weather.main.humidity !== undefined && (
+                        <>
+                          <p style={{ color: "white" , fontSize:"25px" ,paddingLeft:"20px" }}>
+                            Humidity: <WiHumidity /> {weather.main.humidity}%
+                          </p>
+                          <p style={{ color: "white", fontSize:"25px" ,paddingLeft:"20px" }}>Description: {weather.weather[0].description} </p>
+                        </>
+                      )}
+                    </div>
+                    <div className="col-lg-6 col-sm-6">
+                      {weather.wind && weather.wind.speed !== undefined && (
+                        <div className="wind-info">
+                          <p style={{ color: "white" ,fontSize:"25px" ,paddingLeft:"20px"}}>
+                            Wind: <WiStrongWind /> {weather.wind.speed} m/s
+                          </p>
+                        </div>
+                      )}
+                      {localTime && <p style={{ color: "white",fontSize:"25px" ,paddingLeft:"20px" }}>Local Time: {localTime}</p>}
+                    </div>
+                  </div>
+                </div>
+</div>              )}
+            </>
+          ) : (
+            search.trim() !== "" && (
+              <p style={{ color: "white", padding: "20px" }}>City not found. Please try again.</p>
+            )
           )}
         </div>
         <Footer />

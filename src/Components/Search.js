@@ -56,7 +56,7 @@ export default function Search() {
               />
             </div>
             <div className='col-lg-2' style={{ marginTop: '190px' }}>
-            <Link to='/Map'>
+            <Link to='/Weather'>
               <Button type="submit" style={buttonStyle} onClick={handleSearch}>
                 Get Weather
           </Button>
@@ -80,5 +80,5 @@ export default function Search() {
   <Footer style={{ marginTop: '80px' }} />
       </div>
    </>
-  );
+     );
 }
