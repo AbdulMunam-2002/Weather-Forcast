@@ -1,41 +1,34 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import image from '../Assets/Images/Rectangle 95.png';
-import image3 from '../Assets/Ellipse 1.png';
+import { Container, Button } from 'react-bootstrap';
 import Header from './Header';
 import Footer from './Footer';
-
-const imageUrl = '../Assets/Img 1.png';
+import image from '../Assets/Images/Rectangle 95.png';
+import image3 from '../Assets/Ellipse 1.png';
 
 function Aboutus() {
   const imageStyle = {
     width: '100%',
     height: 'auto',
     objectFit: 'cover',
-    marginTop: '150px'
-  };
-
-  const image3Style = {
-    width: '50%',
-    height: 'auto',
-    objectFit: 'cover',
+    marginTop: '150px',
   };
 
   const overlayTextStyle = {
     position: 'absolute',
-    top: '60%',
-    left: '25%',
-    transform: 'translate(-70%, -70%)',
+    top: '65%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
     color: '#fff',
     fontSize: '2em',
     fontWeight: 'bold',
+    textAlign: 'left', // Center text
   };
 
   const buttonStyle = {
     position: 'absolute',
-    top: '65%',
-    left: '17%',
+    top: '90%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
   };
 
   const aboutTextStyle = {
@@ -50,7 +43,7 @@ function Aboutus() {
   return (
     <div className='bg2'>
       <Header />
-      <Container className="my-4 text-center" style={{ position: 'relative' }}>
+      <Container className="my-4 text-center position-relative">
         <img src={image} alt="SKYSYNC" style={imageStyle} />
         <div style={overlayTextStyle}>About SkySync</div>
         <Button variant="success" style={buttonStyle}>
@@ -73,7 +66,7 @@ function Aboutus() {
             </p>
           </div>
           <div className="col-lg-6 col-sm-12 col-md-6">
-            <img src={image3} alt="SKYSYNC" style={image3Style} />
+            <img src={image3} alt="SKYSYNC" style={{ width: '50%', height: 'auto', objectFit: 'cover' }} />
           </div>
         </div>
       </Container>

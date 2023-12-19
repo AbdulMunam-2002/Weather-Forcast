@@ -14,10 +14,9 @@ import news6 from '../Assets/Images/othernews.png';
 
 export default function NewsandBlogs() {
   return (
-    <>
-      <Link to='/Newsandblogs'>
-        <div className='bg3'>
+    <>     <div className='bg3'>
           <Header />
+
 
           <Container style={{ marginTop: '50px', marginBottom: '50px' }}>
             {/* Heading */}
@@ -73,7 +72,6 @@ export default function NewsandBlogs() {
 
           <Footer />
         </div>
-      </Link>
     </>
   );
 }
