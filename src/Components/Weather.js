@@ -78,7 +78,7 @@ export default function Weather() {
         <div className="weather-info">
           {(weather && weather.name) ? (
             <>
-              <h4 style={{ color: "white", marginTop: "20px" }}>{weather.name}</h4>
+              <h4 style={{ color: "white", marginTop: "20px" }}>{weather.name}, {weather.sys.country}</h4>
               <div className="weather-icon">
                 {weatherIcon && (
                   <img
